@@ -6,6 +6,7 @@ var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('url'); 
 var url = require('url');
 var app = express();
+var arra=[];
 app.use(bodyParser());
 
 app.get('/:format', function (req, res) {
